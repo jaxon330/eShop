@@ -2,11 +2,11 @@ import React from 'react'
 import './Home.css'
 import Product from './Product'
 
-const Home = () => {
-  return (
-    <div>
+function Home() {
+    return (
         <div className="home">
             <div className="home__container">
+
                 <img src="https://www.x-cart.com/wp-content/uploads/2019/01/ecommerce-768x278.jpg" alt="" className="home__image" />
 
                 <div className="home__row">
@@ -59,10 +59,9 @@ const Home = () => {
                         image="https://images-na.ssl-images-amazon.com/images/I/6125mFrzr6L._AC_SX355_.jpg"
                     />
                 </div>
-            </div>
-        </div>
-    </div>
-  )
+            </div>   
+        </div> 
+    )
 }
 
 export default Home

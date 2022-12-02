@@ -3,12 +3,14 @@ import './Product.css'
 
 const Product = ({id, title, image, rating, price}) => {
   return (
-    <div>
+
         <div className="product">
-            <div className="product__info">
+        <div className="product__info">
                 <p>{title}</p>
-                <small></small>
-                <strong>{price}</strong>
+                <p className="product__price">
+                    <small>$</small>
+                    <strong>{price}</strong>
+                </p>
                 <div className="product__rating">
                     {Array(rating)
                     .fill()
@@ -22,7 +24,7 @@ const Product = ({id, title, image, rating, price}) => {
 
             <button>Add to Basket</button>
         </div>
-    </div>
+
   )
 }
 
